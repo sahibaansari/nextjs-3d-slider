@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+About This Project
 
-## Getting Started
+I have worked with many sliders in different projects, but most of them always felt the same — flat, simple left-right movement, and nothing visually unique. So I wanted to create something more dynamic and modern.
 
-First, run the development server:
+This project is my attempt to build a 3D rotating image slider that feels alive, interactive, and visually fresh.
+Instead of a traditional horizontal slider, this version uses:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+3D CSS transforms
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Circular rotation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Depth (translateZ)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Perspective view
 
-## Learn More
+Hover-based pause + zoom
 
-To learn more about Next.js, take a look at the following resources:
+It gives the user a more immersive experience and stands out from standard UI patterns.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+💡 Why I Built This Slider in Next.js
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Even though this design works in plain HTML/CSS, I chose Next.js because it provides real development advantages:
 
-## Deploy on Vercel
+✔ Component Reusability
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The slider becomes a reusable UI module instead of repeated HTML code.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+✔ Image Optimization
+
+Next.js automatically optimizes images, improving loading speed and performance.
+
+✔ Faster Rendering (SSR/ISR)
+
+Pages load quicker because they can be rendered on the server.
+
+✔ Scalable Project Structure
+
+Perfect foundation for adding future features like:
+
+dynamic image loading
+
+API-based sliders
+
+admin panel to upload images
+
+animations controlled by state
+
+✔ Professional Codebase
+
+Next.js turns a simple idea into a production-ready, portfolio-level project.
